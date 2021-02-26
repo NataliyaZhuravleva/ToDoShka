@@ -88,15 +88,16 @@ The main users are the people who are going on their trip. When you are planning
   <summary>User stories and specifications</summary>
   <table>
     <tr>
-      <th> Story 01 </th><th></th>
+      <th><span style="color:#c4f4ef">Story 01</span> 
+ </th><th></th>
     </tr>
     <tr>
-      <td> User Story </td>
-      <td>As a user, I want to be able to choose Las Vegas as a city to travel, and see what kind of activity I can do there.</td>
+      <td> <span style="color:#c4f4ef">User Story</span> </td>
+      <td><span style="color:#c4f4ef">As a user, I want to be able to choose Las Vegas as a city to travel, and see what kind of activity I can do there.</span></td>
     </tr>
     <tr>
-      <td> Behavior 01-A </td>
-      <td>User is able to get a list of activities possible in Las Vegas.</td>
+      <td><b>Behavior 01-A </b></td>
+      <td><b>User is able to get a list of activities possible in Las Vegas.</b></td>
     </tr>
     <tr>
       <td> Input </td>
@@ -120,15 +121,15 @@ The main users are the people who are going on their trip. When you are planning
 
   <table>
     <tr>
-      <th> Story 02 </th><th></th>
+      <th> <span style="color:#c4f4ef">Story 02</span> </th><th></th>
     </tr>
     <tr>
-      <td> User Story </td>
-      <td>As a user, I want to be able to choose from a list of activities one activity I am interested in.</td>
+      <td> <span style="color:#c4f4ef">User Story</span> </td>
+      <td><span style="color:#c4f4ef">As a user, I want to be able to choose from a list of activities one activity I am interested in.</span></td>
     </tr>
     <tr>
-      <td> Behavior 02-A </td>
-      <td>User is able to choose Show and get a list of show in Las Vegas for particular day.</td>
+      <td> <b>Behavior 02-A </b></td>
+      <td><b>User is able to choose Show and get a list of show in Las Vegas for particular day.</b></td>
     </tr>
     <tr>
       <td> Input </td>
@@ -147,8 +148,8 @@ The main users are the people who are going on their trip. When you are planning
       <td>False</td>
     </tr>
     <tr>
-      <td> Behavior 02-B </td>
-      <td>User is able to choose Drink and get a list of bars in Las Vegas.</td>
+      <td> <b>Behavior 02-B</b> </td>
+      <td><b>User is able to choose Drink and get a list of bars in Las Vegas.</b></td>
     </tr>
     <tr>
       <td> Input </td>
@@ -167,53 +168,86 @@ The main users are the people who are going on their trip. When you are planning
       <td>False</td>
     </tr>
     <tr>
-      <td> Behavior 02-C </td>
-      <td>User is able to choose Drink and get a list of bars in Las Vegas.</td>
+      <td> <b>Behavior 02-C </b></td>
+      <td><b>User is able to choose Extreme Entertainment and get a list of extreme attractions in Las Vegas.</b></td>
     </tr>
     <tr>
       <td> Input </td>
-      <td>Drink</td>
+      <td>Extreme Entertainment</td>
     </tr>
     <tr>
       <td> Output </td>
-      <td>List of bars in Las Vegas</td>
+      <td>List of extreme attractions in Las Vegas.</td>
     </tr>
     <tr>
       <td> Notes </td>
-      <td>Research APIs for restaurants in Las Vegas.</td>
+      <td>Research APIs for extreme attractions in Las Vegas.</td>
     </tr>
     <tr>
       <td> Completion </td>
       <td>False</td>
     </tr>
     <tr>
-      <td> Behavior 02-D </td>
-      <td>User is able to choose Drink and get a list of bars in Las Vegas.</td>
+      <td> <b>Behavior 02-D </b></td>
+      <td><b>User is able to choose Family-style and get a list of kid's attractions in Las Vegas.</b></td>
     </tr>
     <tr>
       <td> Input </td>
-      <td>Drink</td>
+      <td>Family-style</td>
     </tr>
     <tr>
       <td> Output </td>
-      <td>List of bars in Las Vegas</td>
+      <td>List of kid's attractions in Las Vegas.</td>
     </tr>
     <tr>
       <td> Notes </td>
-      <td>Research APIs for restaurants in Las Vegas.</td>
+      <td>Research APIs for kid's attractions in Las Vegas.</td>
     </tr>
     <tr>
       <td> Completion </td>
       <td>False</td>
     </tr>
   </table>
+  
+  <hr><hr>
+
+  <table>
+    <tr>
+      <th> <span style="color:#c4f4ef">Story 03</span> </th><th></th>
+    </tr>
+    <tr>
+      <td> <span style="color:#c4f4ef">User Story</span> </td>
+      <td><span style="color:#c4f4ef">As a user, I want to be able to delete some offered Thins ToDo if I don't want to do that, so I am able to get my own list as a guide for my trip to Las Vegas.</span></td>
+    </tr>
+    <tr>
+      <td> <b>Behavior 03-A</b> </td>
+      <td><b>User is able to delete particular Thing ToDo from their list.</b></td>
+    </tr>
+    <tr>
+      <td> Input </td>
+      <td>delete item from list</td>
+    </tr>
+    <tr>
+      <td> Output </td>
+      <td>Item deleted from the user list</td>
+    </tr>
+    <tr>
+      <td> Notes </td>
+      <td>Research how to organize database</td>
+    </tr>
+    <tr>
+      <td> Completion </td>
+      <td>False</td>
+    </tr>
+  </table>
+
 </details>
 
 ## <span style="color:#0ec2b8" id="setup">Setup and Use</span>
 ### <span style="color:#0ec2b8" id="cloning">Cloning the project</span>
-1. _Navigate to my [TheBlueOysterBar-Redux repo](https://github.com/NataliyaZhuravleva/TheBlueOysterBar-Redux) at https://github.com/NataliyaZhuravleva/TheBlueOysterBar-Redux_ to view the project files and commits.
+1. _Navigate to my [ToDoShka repo](https://github.com/NataliyaZhuravleva/ToDoShka) at https://github.com/NataliyaZhuravleva/ToDoShka_ to view the project files and commits.
 2. _Click on the green button labeled `Code`_ to copy repository URL.
-3. _Clone the repository to your local machine_ by opening your machine terminal and using the command `git clone https://github.com/NataliyaZhuravleva/TheBlueOysterBar-Redux`.
+3. _Clone the repository to your local machine_ by opening your machine terminal and using the command `git clone https://github.com/NataliyaZhuravleva/ToDoShka`.
 
 ### <span style="color:#0ec2b8" id="running">Running Application</span> 
 
