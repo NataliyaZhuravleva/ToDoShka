@@ -4,3 +4,4 @@
 12:55 - research API Sygic Travel API
 01:32 - sent request for API (it has individual distribution)
 01:46 - research Amadeus Tour and Activities API - doesn't match
+03:21 - still research API
