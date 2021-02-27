@@ -6,3 +6,4 @@
 01:46 - research Amadeus Tour and Activities API - doesn't match
 03:21 - still research API
 03:56 - test OpenTripMap API
+04:32 - create APISet.md doc to store APIs I need to use in the project
