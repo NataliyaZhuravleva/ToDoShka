@@ -6,8 +6,7 @@ import Places from './Places';
 function App() {
   return (
     <React.Fragment>
-      {/* <Places /> */}
-      <p>Test</p>
+      <Places />
     </React.Fragment>
   );
 }
