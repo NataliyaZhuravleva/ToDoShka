@@ -32,6 +32,11 @@ class Places extends React.Component {
                 <li key={index}> 
                   <h3> {place.name}</h3>
                   <p>{place.xid}</p>
+                  <div>
+                  {place.address ?
+                    <p>Address: {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>
+                    : 'Loading'}
+                </div>
                 </li>
               </div>
             )}
