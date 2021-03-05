@@ -21,30 +21,29 @@ export const makeApiCall = (category) => {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          dispatch(getPlacesSuccess(jsonifiedResponse));
+          //dispatch(getPlacesSuccess(jsonifiedResponse));
           console.log(jsonifiedResponse);
           return jsonifiedResponse;
         })
-        .then((jsonifiedResponse) => {
-          //console.log(jsonifiedResponse); 
-           return (jsonifiedResponse.map((obj, index) => //console.log(place.xid));
-            fetch(`https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.OPEN_TRIP_MAP_API_KEY}`)
-              .then(response2 => response2.json())
-              .then(
-                (jsonifiedResponse2) => {
-                  // console.log(place); //first responce
-                  // console.log(jsonifiedResponse2);//second response
-                  //jsonifiedResponse[index]={};
-                  jsonifiedResponse[index] = { ...obj, ...jsonifiedResponse2 };//combained
-                  console.log(jsonifiedResponse);
-                  dispatch(getPlacesSuccess(jsonifiedResponse));
-  
-                }) 
-              .catch((error) => {
-                dispatch(getPlacesFailure(error));
+      .then((jsonifiedResponse) => {
+        //console.log(jsonifiedResponse); 
+        return (jsonifiedResponse.map((obj, index) => //console.log(place.xid));
+          fetch(`https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.OPEN_TRIP_MAP_API_KEY}`)
+            .then(response2 => response2.json())
+            .then(
+              (jsonifiedResponse2) => {
+                // console.log(place); //first responce
+                // console.log(jsonifiedResponse2);//second response
+                //jsonifiedResponse[index]={};
+                jsonifiedResponse[index] = { ...obj, ...jsonifiedResponse2 };//combained
+                console.log(jsonifiedResponse);
+                dispatch(getPlacesSuccess(jsonifiedResponse));
               })
-          ))
-        })
+            .catch((error) => {
+              dispatch(getPlacesFailure(error));
+            })
+        ))
+      })
       .catch((error) => {
         dispatch(getPlacesFailure(error));
       })
