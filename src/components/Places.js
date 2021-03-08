@@ -14,7 +14,6 @@ class Places extends React.Component {
 
   render() {
     const { error, isLoading, places } = this.props;
-console.log(places);
     if (error) {
       return <React.Fragment>Error: {error.message}</React.Fragment>;
     } else if (isLoading) {
@@ -24,16 +23,12 @@ console.log(places);
         <React.Fragment>
           <h1>Places</h1>
           <ul>
-            {console.log(places)}
-            {console.log(places[1])}
             {places.map((place, index) => (
               <div key={index}>
-                {console.log(place)}
                 <li> 
                   <h3> {place.name}</h3>
                   <p>{place.xid}</p>
                   <div>
-                    {console.log(place.address)}
                     {place.address ?
                     <p>Address: {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>
                     : 'Doesnt have an address'}
