@@ -7,3 +7,6 @@
 03:21 - still research API
 03:56 - test OpenTripMap API
 04:32 - create APISet.md doc to store APIs I need to use in the project
+
+March 8th
+10:57 -planning interface
