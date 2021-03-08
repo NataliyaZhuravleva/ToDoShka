@@ -2,13 +2,20 @@ import React from 'react';
 import Navbar from '../navbar/Navbar';
 import './header.css';
 
-function Header(){
+function Header() {
   return (
     <React.Fragment>
-      ToDoShka
-      <section className="header-navbar">
-      <Navbar />
+      <section className="header">
+        <section className="header-top">
+          <section className="header-logo">
+            ToDoShka
+          </section>
+          <section className="header-navbar">
+            <Navbar />
+          </section>
+        </section>
       </section>
+
     </React.Fragment>
   )
 }
