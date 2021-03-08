@@ -6,17 +6,17 @@ import './navbar.css'
 
 function Navbar() {
 
-  return (
+  return (   
     <React.Fragment>
       {/* <div className="navbar"> */}
          <Router>
           <Switch>
            <div className='navbarButtons'>
               <ul id="nav">
-                <li><Link to="/"  href="#">Home</Link></li>
-                <li><Link to="/"href="#">About</Link></li>
-                <li><Link to="/" href="#">FAQ</Link></li>
-                <li><Link to="/"href="#">Contact</Link></li>
+                <li><Link to="/" href="#">Home</Link></li>
+                <li><Link to="/About"href="#">About</Link></li>
+                <li><Link to="/FAQ" href="#">FAQ</Link></li>
+                <li><Link to="/Contact"href="#">Contact</Link></li>
               </ul>
             </div>
 
