@@ -8,18 +8,25 @@ function Navbar() {
 
   return (
     <React.Fragment>
-      <section className="navbar">
-        <Router>
+      {/* <div className="navbar"> */}
+         <Router>
           <Switch>
-            <Route>
-              <Link to="/" className="navbar-item">Home</Link>
-            </Route>
+           <div className='navbarButtons'>
+              <ul id="nav">
+                <li><Link to="/"  href="#">Home</Link></li>
+                <li><Link to="/"href="#">About</Link></li>
+                <li><Link to="/" href="#">FAQ</Link></li>
+                <li><Link to="/"href="#">Contact</Link></li>
+              </ul>
+            </div>
+
             {/* <Route>
-              <Link to="/" className="navbar-item">SignIn</Link>
+              <Link to="/" className="navbar-item">Home</Link>
             </Route> */}
+        
           </Switch>
-        </Router>
-      </section>
+        </Router> 
+      {/* </div> */}
     </React.Fragment>
   )
 }

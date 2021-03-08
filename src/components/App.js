@@ -8,7 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <img src={"https://www.macaubusiness.com/wp-content/uploads/2020/05/las-vegas.jpg"} alt="An image of the blue oyster bar sign" />
+      {/* <img src={"https://www.macaubusiness.com/wp-content/uploads/2020/05/las-vegas.jpg"} alt="An image of Las Vegas, NV" /> */}
       {/* <Places /> */}
     </React.Fragment>
   );
