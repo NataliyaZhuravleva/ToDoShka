@@ -38,7 +38,8 @@ describe('placesReducer', () => {
     });
   });
   test('successfully getting places should change isLoading to false and update places', () => {
-    const places = "A place";
+    //const places = "A place";
+    let places = [{address: {city:"Las Vegas"}},{address:{city: "Seattle"}}]
     action = {
       type: c.GET_PLACES_SUCCESS,
       places
@@ -46,7 +47,8 @@ describe('placesReducer', () => {
   
     expect(placesReducer(loadingState, action)).toEqual({
         isLoading: false,
-        places: "A place",
+        //places: "A place",
+        places: [{address: {city:"Las Vegas"}},{address:{city: "Seattle"}}],
         error: null
     });
   });
