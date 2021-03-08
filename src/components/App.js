@@ -8,6 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
+      <img src={"https://www.macaubusiness.com/wp-content/uploads/2020/05/las-vegas.jpg"} alt="An image of the blue oyster bar sign" />
       {/* <Places /> */}
     </React.Fragment>
   );

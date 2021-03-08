@@ -14,6 +14,9 @@ function Navbar() {
             <Route>
               <Link to="/" className="navbar-item">Home</Link>
             </Route>
+            {/* <Route>
+              <Link to="/" className="navbar-item">SignIn</Link>
+            </Route> */}
           </Switch>
         </Router>
       </section>
