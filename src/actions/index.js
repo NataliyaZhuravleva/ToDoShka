@@ -17,7 +17,7 @@ export const getPlacesFailure = (error) => ({
 export const makeApiCall = (category) => {
   return dispatch => {
     dispatch(requestPlaces);
-    return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=600&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)//
+    return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=700&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
@@ -25,8 +25,9 @@ export const makeApiCall = (category) => {
           return jsonifiedResponse;
         })
       .then((jsonifiedResponse) => {
-        jsonifiedResponse.map((obj, index) => //console.log(place.xid));
-        (fetch(`https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
+        let calls=jsonifiedResponse.map((obj, index) => {
+        //dispatch(requestPlaces);
+        return fetch(`https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
           .then(response2 => response2.json())
           .then(
             (jsonifiedResponse2) => {
@@ -35,19 +36,22 @@ export const makeApiCall = (category) => {
               //jsonifiedResponse[index]={};
               jsonifiedResponse[index] = { ...obj, ...jsonifiedResponse2 };//combained
               console.log(jsonifiedResponse[index]);
-              dispatch(getPlacesSuccess(jsonifiedResponse));
-              return jsonifiedResponse;
+              //dispatch(getPlacesSuccess(jsonifiedResponse));
+              // return jsonifiedResponse;
             })
           .catch((error) => {
             dispatch(getPlacesFailure(error));
           })
+        }  
         )
-        )
+        Promise.all(calls).then(()=>dispatch(getPlacesSuccess(jsonifiedResponse)));
+        // setTimeout(() => dispatch(getPlacesSuccess(jsonifiedResponse)),0);
         //console.log(jsonifiedResponse);
+        //dispatch(getPlacesSuccess(jsonifiedResponse));
         return jsonifiedResponse;
       })
       // .then((jsonifiedResponse) => {
-      //   return dispatch(getPlacesSuccess(jsonifiedResponse));
+      //   return 
       // })
 
   }

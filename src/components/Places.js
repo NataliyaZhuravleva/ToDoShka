@@ -27,16 +27,16 @@ console.log(places);
             {console.log(places)}
             {console.log(places[1])}
             {places.map((place, index) => (
-              <div>
+              <div key={index}>
                 {console.log(place)}
-                <li key={index}> 
+                <li> 
                   <h3> {place.name}</h3>
                   <p>{place.xid}</p>
                   <div>
                     {console.log(place.address)}
                     {place.address ?
                     <p>Address: {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>
-                    : 'Loading'}
+                    : 'Doesnt have an address'}
                   </div>
                 </li>
               </div>
