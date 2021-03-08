@@ -8,7 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <Places />
+      {/* <Places /> */}
     </React.Fragment>
   );
 }
