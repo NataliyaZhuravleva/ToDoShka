@@ -9,7 +9,7 @@ class Places extends React.Component {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(makeApiCall("bars"));
+    dispatch(makeApiCall("pools"));
   }
 
   render() {
