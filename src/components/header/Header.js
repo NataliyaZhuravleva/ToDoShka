@@ -15,14 +15,15 @@ function Header() {
     <React.Fragment>
       <section className="header">
         <section className="header-top">
-          <section className="header-logo">
-          <div className="logo">
+
+          <div className="header-logo">
             <img id="logo" src={image} alt="Logo" />
-           </div>
-          </section>
+          </div>
+
           <section className="header-navbar">
             <Navbar />
           </section>
+
         </section>
       </section>
 
