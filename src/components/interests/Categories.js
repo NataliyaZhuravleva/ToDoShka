@@ -29,8 +29,8 @@ function Categories() {
           </Router>
         </section>
         <section className="userList">
-          User List
-          {/* <Places id='places'/> */}
+          User List:
+          <Places id='places'/>
       </section>
       </section>
     </React.Fragment>
