@@ -4,6 +4,7 @@ import Header from './header/Header';
 import './App.css';
 import Places from './Places';
 
+
 function App() {
   return (
     <React.Fragment>
@@ -11,8 +12,8 @@ function App() {
       <div className='mainContainer'>
 
         
-    
-      <Places />
+  
+      {/* <Places /> */}
       </div>
 
       {/* <div className='lineContainer'>
@@ -20,8 +21,8 @@ function App() {
       </div> */}
       <div className='detailContainer'>
         <div className="image">
-      <img src={"https://www.macaubusiness.com/wp-content/uploads/2020/05/las-vegas.jpg"} alt="An image of Las Vegas, NV" />
-      </div>
+          <img id='image1' src={"https://www.macaubusiness.com/wp-content/uploads/2020/05/las-vegas.jpg"} alt="An image of Las Vegas, NV" />
+        </div>
       </div>
     </React.Fragment>
   );

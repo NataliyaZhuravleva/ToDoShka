@@ -1,6 +1,14 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar';
 import './header.css';
+import image from './../../img/logo.png';
+// import headerImg from './../img/header-img.png';
+//How to import an image in react js	
+// import image from './image-path';
+
+// <img src={image} alt="Write something here" />
+
+
 
 function Header() {
   return (
@@ -8,7 +16,9 @@ function Header() {
       <section className="header">
         <section className="header-top">
           <section className="header-logo">
-            ToDoShka
+          <div className="logo">
+            <img id="logo" src={image} alt="Logo" />
+           </div>
           </section>
           <section className="header-navbar">
             <Navbar />

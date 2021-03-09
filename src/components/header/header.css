@@ -11,11 +11,15 @@
 
 }
 .header-logo {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   /* align-items: center; */
-  margin-right: 20px;
-  font-style: italic; 
+  /* margin-right: 20px; */
+  /* font-style: italic;  */
+
+}
+.logo {
+margin-left: 20px
 }
 .header-navbar {
   display: flex;
@@ -23,4 +27,8 @@
   flex-direction: column;
   margin-left: 9in;
   font-style: italic;
+}
+
+#logo{
+  width: 90px;
 }
