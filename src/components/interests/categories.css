@@ -7,6 +7,19 @@
   color: rgb(13,177,153);
   text-align: center;
 }
+
+.userContainer{
+  border: 1px rgb(0, 0, 0) solid; 
+  display: flex;
+}
 .categories{
   color:rgb(13,177,153);
+  border: 1px rgb(150, 28, 28) solid; 
+  width: 20%;
+ 
+}
+.userList{
+  border: 1px rgb(55, 187, 38) solid; 
+  width: 80%;
+ 
 }
