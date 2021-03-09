@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './categories.css';
 import Places from '../Places'
 
@@ -18,17 +17,18 @@ function Categories() {
           Categories:
               <div className='categoriesLinks'>
                 <ul id="categoriesList">
-                  {categories.map((category) =>
-                      <li>{category}</li>
+                  {categories.map((category, index) =>
+                      <li onClick={()=>whenCategoryClicked(index)}>{category}</li>
+                      
                   )}
                 </ul>
               </div>
         </section>
         <section className="userList">
           User List:
-          {/* <Places 
+          <Places 
           id='places'
-          category={drink}/> */}
+          whenCategoryClicked={onCategorySelection}/>
         </section>
       </section>
     </React.Fragment>
