@@ -1,12 +1,16 @@
 import React from 'react';
+import './categories.css';
 
-function Interests(){
+function Categories(){
   return (
     <React.Fragment>
-      <section className="welcome-text">
+      <section className="welcomeText">
+        Welcome co ToDoShka!
+      </section>
+      <section className="bodyText">
         Please, choose your interest.
       </section>
-      <section classname="buttons">
+      <section className="interestsButtons">
         <button>Show</button>
         <button>Drink</button>
         <button>Extreme</button>
@@ -16,4 +20,4 @@ function Interests(){
   )
 }
 
-export default Interests;
+export default Categories;

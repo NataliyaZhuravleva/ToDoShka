@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
-import Interests from './interests/Interests';
+import Interests from './interests/Categories';
 import './App.css';
 import Places from './Places';
 
