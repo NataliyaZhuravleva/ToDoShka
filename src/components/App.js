@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
-import Interests from './interests/Categories';
+import Categories from './interests/Categories';
 import './App.css';
 import Places from './Places';
 
@@ -10,14 +10,9 @@ function App() {
     <React.Fragment>
       <Header />
       <div className='mainContainer'>
-
-      <Interests />  
-  
-      {/* <Places id='places'/> */}
+        <Categories />
       </div>
-
       {/* <div className='lineContainer'>
-        
       </div> */}
       <div className='detailContainer'>
         <div className="image">

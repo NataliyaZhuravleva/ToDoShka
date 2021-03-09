@@ -2,6 +2,7 @@
   color: rgb(13,177,153);
   text-align: center;
   font-size: xx-large;
+  font-family: ;
 }
 .bodyText{
   color: rgb(13,177,153);
@@ -16,6 +17,7 @@
   color:rgb(13,177,153);
   border: 1px rgb(150, 28, 28) solid; 
   width: 20%;
+  font-family: 'Pacifico';
  
 }
 .userList{

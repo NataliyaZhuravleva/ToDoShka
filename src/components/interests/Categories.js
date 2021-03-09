@@ -20,17 +20,17 @@ function Categories() {
               <div className='categoriesLinks'>
                 <ul id="categoriesList">
                   <li><Link to="/show" href="#">Show</Link></li>
-                  <li><Link to="/show" href="#">Drink</Link></li>
-                  <li><Link to="/show" href="#">Extreme</Link></li>
-                  <li><Link to="/show" href="#">Family Style</Link></li>
+                  <li><Link to="/drink" href="#">Drink</Link></li>
+                  <li><Link to="/extreme" href="#">Extreme</Link></li>
+                  <li><Link to="/family-style" href="#">Family Style</Link></li>
                 </ul>
               </div>
             </Switch>
           </Router>
         </section>
         <section className="userList">
-          List
-          <Places id='places'/>
+          User List
+          {/* <Places id='places'/> */}
       </section>
       </section>
     </React.Fragment>
