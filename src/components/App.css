@@ -50,6 +50,8 @@
   float: left;
   border-radius: 15px;
   margin-left: 20px;
+  overflow:auto;
+    /* word-wrap: break-word; */
 }
 
 .detailContainer {
@@ -77,3 +79,5 @@
   width: 100%;
   border-radius: 15px 15px 0px 0px;
   }
+
+  
