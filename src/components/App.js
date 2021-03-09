@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
+import Interests from './interests/Interests';
 import './App.css';
 import Places from './Places';
 
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <div className='mainContainer'>
 
-        
+      <Interests />  
   
       {/* <Places id='places'/> */}
       </div>
