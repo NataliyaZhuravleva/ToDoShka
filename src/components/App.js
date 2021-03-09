@@ -13,7 +13,7 @@ function App() {
 
         
   
-      <Places id='places'/>
+      {/* <Places id='places'/> */}
       </div>
 
       {/* <div className='lineContainer'>

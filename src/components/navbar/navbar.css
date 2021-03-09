@@ -22,9 +22,11 @@
  #nav li a {
   display: block;
   padding: 8px 15px;
-  text-decoration: none;
+  font-family:cursive;
+  text-decoration:wavy;
   font-weight: bold;
-  color: #069;
+  font-size:x-large;
+  color: rgb(17, 223, 193);
   /* border: 1px rgb(255, 38, 0) solid;   */
 
  }
@@ -32,6 +34,6 @@
 
 .navbarButtons { 
     align-items: center;
-    margin-left: 1in; 
+    margin-left: 0.5in; 
   }
  
