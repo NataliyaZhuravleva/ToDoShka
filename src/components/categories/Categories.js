@@ -18,8 +18,8 @@ function Categories() {
               <div className='categoriesLinks'>
                 <ul id="categoriesList">
                   {categories.map((category, index) =>
-                      <li onClick={()=>whenCategoryClicked(index)}>{category}</li>
-                      
+                      // <li onClick={()=>whenCategoryClicked(index)}>{category}</li>
+                      <li>{category}</li>
                   )}
                 </ul>
               </div>
@@ -28,7 +28,8 @@ function Categories() {
           User List:
           <Places 
           id='places'
-          whenCategoryClicked={onCategorySelection}/>
+          // whenCategoryClicked={onCategorySelection}/>
+          />
         </section>
       </section>
     </React.Fragment>
