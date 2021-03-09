@@ -4,6 +4,7 @@ import './categories.css';
 import Places from '../Places'
 
 function Categories() {
+  const categories = ['Drink', 'Extreme', 'Family Style', 'Show'];
   return (
     <React.Fragment>
       <section className="welcomeText">
@@ -15,23 +16,20 @@ function Categories() {
       <section className="userContainer">
         <section className="categories">
           Categories:
-          <Router>
-            <Switch>
               <div className='categoriesLinks'>
                 <ul id="categoriesList">
-                  <li><Link to="/show" href="#">Show</Link></li>
-                  <li><Link to="/drink" href="#">Drink</Link></li>
-                  <li><Link to="/extreme" href="#">Extreme</Link></li>
-                  <li><Link to="/family-style" href="#">Family Style</Link></li>
+                  {categories.map((category) =>
+                      <li>{category}</li>
+                  )}
                 </ul>
               </div>
-            </Switch>
-          </Router>
         </section>
         <section className="userList">
           User List:
-          <Places id='places'/>
-      </section>
+          {/* <Places 
+          id='places'
+          category={drink}/> */}
+        </section>
       </section>
     </React.Fragment>
   )

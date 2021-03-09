@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
-import Categories from './interests/Categories';
+import Categories from './categories/Categories';
 import './App.css';
 import Places from './Places';
 
