@@ -11,3 +11,6 @@
 March 8th
 10:57 -planning interface
 12:12 - playing with interface
+
+March 9th
+8:54 - research fonts, styling elements
