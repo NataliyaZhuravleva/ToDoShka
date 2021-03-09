@@ -14,20 +14,24 @@
 
 .userContainer{
   color: rgb(13,177,153);
-  border: 1px rgb(0, 0, 0) solid; 
+  /* border: 1px rgb(0, 0, 0) solid;  */
   display: flex;
   font-family: 'Pacifico';
+  
 }
 .categories{
   color:rgb(13,177,153);
-  border: 1px rgb(150, 28, 28) solid; 
+  /* border: 1px rgb(150, 28, 28) solid;  */
   width: 20%;
   font-family: 'Pacifico';
- 
+  margin-left: 10px;
+  box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
 }
 .userList{
-  border: 1px rgb(55, 187, 38) solid; 
-  width: 80%;
+  /* border: 1px rgb(55, 187, 38) solid;  */
+  width: 75%;
+  /* float: left; */
+  margin-left: 25px;
   font-weight: lighter;
- 
+  box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
 }
