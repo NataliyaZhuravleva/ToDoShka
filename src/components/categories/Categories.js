@@ -19,7 +19,7 @@ function Categories() {
                 <ul id="categoriesList">
                   {categories.map((category, index) =>
                       // <li onClick={()=>whenCategoryClicked(index)}>{category}</li>
-                      <li>{category}</li>
+                      <li><a href="#" onClick="{category}">{category}</a></li>
                   )}
                 </ul>
               </div>
@@ -28,7 +28,6 @@ function Categories() {
           User List:
           <Places 
           id='places'
-          // whenCategoryClicked={onCategorySelection}/>
           />
         </section>
       </section>

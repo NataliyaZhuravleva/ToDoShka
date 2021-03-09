@@ -22,7 +22,7 @@ class Places extends React.Component {
     } else {
       return (
         <React.Fragment>
-          <h1>Places</h1>
+          <h1>The best places for you:</h1>
           <ul>
             {places.map((place, index) => (
               <div key={index}>
