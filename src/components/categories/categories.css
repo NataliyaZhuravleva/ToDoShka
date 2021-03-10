@@ -1,14 +1,15 @@
 .welcomeText{
-  color: rgb(13,177,153);
+  color: rgb(13, 177, 153);
+  text-decoration: underline;
   text-align: center;
   font-size: xx-large;
   font-family: 'Pacifico';
-  text-shadow: 2px 1px rgb(211, 79, 193);
+  /* text-shadow: 2px 1px rgb(211, 79, 193); */
 }
 
 
 .userContainer{
-  color: rgb(13,177,153);
+  color: rgb(106, 131, 127);
   /* border: 1px rgb(0, 0, 0) solid;  */
   height: 700px;
   display: flex;
@@ -16,7 +17,7 @@
   
 }
 .categories{
-  color:rgb(13,177,153);
+  color:rgb(90, 97, 96);
   /* border: 1px rgb(150, 28, 28) solid;  */
   width: 20%;
   height: 630px;
@@ -28,9 +29,14 @@
   /* border: 1px rgb(55, 187, 38) solid;  */
   width: 75%;
   /* float: left; */
+  color:rgb(90, 97, 96);
   height: 630px;
-  margin-left: 25px;
+  margin-left: 20px;
   font-weight: lighter;
   box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
   overflow:auto;
+}
+
+#categoriesList{
+  font-family: 'Montserrat';
 }

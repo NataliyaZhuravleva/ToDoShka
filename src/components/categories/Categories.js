@@ -28,7 +28,7 @@ function Categories(props) {
       </section> */}
       <section className="userContainer">
         <section className="categories">
-          Categories:
+          <h1>Categories:</h1>
               <div className='categoriesLinks'>
             <ul id="categoriesList">
               {categories.map((category, index) =>
