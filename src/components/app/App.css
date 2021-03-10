@@ -48,9 +48,7 @@
   /* margin: 0 auto; */
   background-color: #66ffff00;
   float: left;
-  /* border-radius: 15px; */
   margin-left: 20px;
-  /* overflow:auto; */
   box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
     /* word-wrap: break-word; */
 }

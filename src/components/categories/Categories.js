@@ -23,9 +23,7 @@ function Categories(props) {
       <section className="welcomeText">
         Welcome to ToDoShka!
       </section>
-      {/* <section className="bodyText">
-        Please, choose category of entertainment you are interested in.
-      </section> */}
+      
       <section className="userContainer">
         <section className="categories">
           <h1>Categories:</h1>

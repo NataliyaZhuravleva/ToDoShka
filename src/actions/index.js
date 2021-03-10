@@ -19,6 +19,11 @@ export const changeCategory = (category)=> ({
   category
 })
 
+export const deletePlace = (place) =>({
+  type: c.DELETE_PLACE,
+  place
+})
+
 export const makeApiCall = (category) => {
   
   return dispatch => {
