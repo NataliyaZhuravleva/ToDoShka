@@ -38,18 +38,25 @@ class Places extends React.Component {
                   <div>
                     {place.address ?
                       <p>Address: {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>
-                      : 'Doesnt have an address'}
+                      : false}
+                  </div>
+                  <div>
+                    {place.url ?
+                      <p>Website(s): <a href={place.url}>{place.url}</a> </p>
+                      : false
+                    }
+      
                   </div>
                   <div className="info">
                     <div className="description">
                       {place.wikipedia_extracts ?
                         <p>Description: {place.wikipedia_extracts.text}</p>
-                        : 'This object doesnt have a description'}
+                        : false}
                     </div>
                     <div className="image">
                       {place.preview ?
                         <p><img id='image' src={place.preview.source} alt={place.name} /></p>
-                        : 'Doesnt have image preview'}
+                        : false}
                       {/* <img src={place.preview.source} alt={place.name}/> */}
                     </div>
                   </div>
