@@ -5,12 +5,12 @@
   font-family: 'Pacifico';
   text-shadow: 2px 1px rgb(211, 79, 193);
 }
-.bodyText{
+/* .bodyText{
   color: rgb(13,177,153);
   text-align: center;
   font-family: 'Pacifico';
   font-weight: lighter;
-}
+} */
 
 .userContainer{
   color: rgb(13,177,153);
@@ -34,4 +34,5 @@
   margin-left: 25px;
   font-weight: lighter;
   box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
+  overflow:auto;
 }

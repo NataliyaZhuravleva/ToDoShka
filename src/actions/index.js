@@ -25,13 +25,14 @@ export const makeApiCall = (category) => {
     if (category){
     dispatch(requestPlaces);
 
-    return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=100&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)
+    return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=5000&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
           return jsonifiedResponse;
         })
       .then((jsonifiedResponse) => {
+        console.log(jsonifiedResponse);
         let calls = jsonifiedResponse.map((obj, index) => {
           return fetch(`https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
             .then(response2 => response2.json())

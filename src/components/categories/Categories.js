@@ -8,9 +8,9 @@ function Categories(props) {
   const categories = ['Drink', 'Extreme', 'Family Style', 'Show'];
 
   const categoriesString = {
-    'Drink': "bars&biergartens&pubs&restaurants",
-    'Extreme': 'climbing&roller_coasters&other_amusement_rides',
-    'Family Style': 'amusement_parks&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
+    'Drink': "bars",//&biergartens&pubs&restaurants",
+    'Extreme': 'climbing',//&roller_coasters&other_amusement_rides',
+    'Family Style': 'amusement_parks',//&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
     'Show': 'theatres_and_entertainments'
   }
   const whenCategoryClicked = (category) => {
@@ -23,9 +23,9 @@ function Categories(props) {
       <section className="welcomeText">
         Welcome to ToDoShka!
       </section>
-      <section className="bodyText">
+      {/* <section className="bodyText">
         Please, choose category of entertainment you are interested in.
-      </section>
+      </section> */}
       <section className="userContainer">
         <section className="categories">
           Categories:
@@ -42,7 +42,6 @@ function Categories(props) {
           </div>
         </section>
         <section className="userList">
-          User List:
           <Places 
           id='places'
           />

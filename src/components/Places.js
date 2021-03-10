@@ -4,13 +4,15 @@ import { makeApiCall } from '../actions';
 
 
 class Places extends React.Component {
-  constructor(props) {
-    super(props);
-  };
+  // constructor(props) {
+  //   super(props);
+  // };
 
-  componentDidMount() {
-    const { dispatch } = this.props;
-    dispatch(makeApiCall(this.props.category));
+  componentDidUpdate(prevProps) {
+    if (prevProps.category !== this.props.category) {
+      const { dispatch } = this.props;
+      dispatch(makeApiCall(this.props.category));
+    }
   }
 
   render() {
@@ -18,7 +20,12 @@ class Places extends React.Component {
     if (error) {
       return <React.Fragment>Error: {error.message}</React.Fragment>;
     } else if (isLoading) {
-      return <React.Fragment>Loading...</React.Fragment>;
+      return <React.Fragment>
+        <section className="bodyText">
+          Please, choose a category you are interested in.
+      </section>
+
+      </React.Fragment>;
     } else {
       return (
         <React.Fragment>
