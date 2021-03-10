@@ -1,7 +1,9 @@
 .bodyText{
-  color: rgb(13,177,153);
-  font-family: 'Pacifico';
-  font-weight: lighter;
+  
+  font-family: 'Montserrat';
+  /* font-weight: lighter; */
+  color: rgb(106, 131, 127);
+  text-align: center;
 }
 
 .places, h1{

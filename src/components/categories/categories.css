@@ -4,6 +4,7 @@
   text-align: center;
   font-size: xx-large;
   font-family: 'Pacifico';
+  margin-left: 200px;
   /* text-shadow: 2px 1px rgb(211, 79, 193); */
 }
 
@@ -39,4 +40,5 @@
 
 #categoriesList{
   font-family: 'Montserrat';
+  font-size:large;
 }

@@ -34,7 +34,7 @@ class Places extends React.Component {
             {places.map((place, index) => (
               <div key={index} className="places">
                 <li>
-                  <h3> {place.name}</h3>
+                  <h4> {place.name}</h4>
                   <div className="info">
                     <div className="description">
                     <div>
