@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { makeApiCall } from '../actions';
-
+import { makeApiCall } from '../../actions';
+import './places.css'
 
 class Places extends React.Component {
   // constructor(props) {
@@ -35,6 +35,12 @@ class Places extends React.Component {
               <div key={index}>
                 <li>
                   <h3> {place.name}</h3>
+                  <div>
+                  {place.preview ?
+                  <p><img src={place.preview.source} alt={place.name}/></p>
+                : 'Doesnt have preview'}
+                    {/* <img src={place.preview.source} alt={place.name}/> */}
+                  </div>
                   <div>
                     {place.address ?
                       <p>Address: {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>

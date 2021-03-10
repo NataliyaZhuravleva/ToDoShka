@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './header/Header';
 import Categories from './categories/Categories';
 import './App.css';
-import Places from './Places';
+import Places from './places/Places';
 
 
 function App() {

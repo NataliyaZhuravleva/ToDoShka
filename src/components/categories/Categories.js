@@ -2,7 +2,7 @@ import React from 'react';
 import './categories.css';
 import { connect } from 'react-redux';
 import { changeCategory } from '../../actions';
-import Places from '../Places';
+import Places from '../places/Places';
 
 function Categories(props) {
   const categories = ['Drink', 'Extreme', 'Family Style', 'Show'];
