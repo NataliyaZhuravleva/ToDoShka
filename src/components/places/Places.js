@@ -8,7 +8,7 @@ class Places extends React.Component {
   // constructor(props) {
   //   super(props);
   // };
-  onClickingDelete = (place) => {
+  onClickingDelete(place) {
     const {dispatch} = this.props;
     const action = deletePlace(place);
     dispatch(action);
@@ -20,13 +20,6 @@ class Places extends React.Component {
       dispatch(makeApiCall(this.props.category));
     }
   }
-
-  
-  // const { dispatch } = this.props;
-  //   const action = b.deleteKegBeer(id);
-  //   dispatch(action);
-  //   const action2 = b.deselectKegBeer();
-  //   dispatch(action2);
 
   render() {
     const { error, isLoading, places } = this.props;
@@ -55,7 +48,7 @@ class Places extends React.Component {
               <div key={index} className="places">
                 <li>
                   <h4> {place.name}</h4>
-                  <button onClick={() => onClickingDelete(place)}>Delete Place</button>
+                  <button onClick={() => this.onClickingDelete(place)}>Delete Place</button>
                   <div className="info">
                     <div className="description">
                     <div>

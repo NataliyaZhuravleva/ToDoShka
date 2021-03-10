@@ -31,9 +31,12 @@ export default (state = initialState, action) => {
         category: action.category
       })
     case c.DELETE_PLACE:
-      let newState={...state};
-      delete newState[id];
-      return newState;
+      return Object.assign({}, state, {
+        places: [...state.places.slice(0, action.place),
+                 ...state.places.slice(action.place+1)
+                ]
+
+      });
     default:
       return state;
   }
