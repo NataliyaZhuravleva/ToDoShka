@@ -32,33 +32,38 @@ class Places extends React.Component {
           <h1>The best places for you:</h1>
           <ul>
             {places.map((place, index) => (
-              <div key={index}>
+              <div key={index} className="places">
                 <li>
                   <h3> {place.name}</h3>
-                  <div>
-                    {place.address ?
-                      <p>Address: {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>
-                      : false}
-                  </div>
-                  <div>
-                    {place.url ?
-                      <p>Website(s): <a href={place.url}>{place.url}</a> </p>
-                      : false
-                    }
-      
-                  </div>
                   <div className="info">
                     <div className="description">
-                      {place.wikipedia_extracts ?
-                        <p>Description: {place.wikipedia_extracts.text}</p>
+                    <div>
+                      {place.address ?
+                        <p><u>Address:</u> {place.address.house_number} {place.address.road}, {place.address.city}, {place.address.state}, {place.address.postcode}</p>
                         : false}
                     </div>
-                    <div className="image">
+                    <div>
+                      {place.url ?
+                        <p><u>Website(s):</u> <a href={place.url}>{place.url}</a> </p>
+                        : false
+                      }
+                    </div>
+                    <div>
+                      {place.wikipedia_extracts ?
+                        <p><u>Description:</u> {place.wikipedia_extracts.text}</p>
+                        : false}
+                    </div>
+                    </div>
+                    <div className="objectImage">
                       {place.preview ?
-                        <p><img id='image' src={place.preview.source} alt={place.name} /></p>
+                        <p><img id='objectImage' src={place.preview.source} alt={place.name} /></p>
                         : false}
                       {/* <img src={place.preview.source} alt={place.name}/> */}
                     </div>
+                  </div>
+                  <div className="info">
+                   
+                    
                   </div>
                   <hr />
                 </li>
