@@ -5,16 +5,12 @@
   font-family: 'Pacifico';
   text-shadow: 2px 1px rgb(211, 79, 193);
 }
-/* .bodyText{
-  color: rgb(13,177,153);
-  text-align: center;
-  font-family: 'Pacifico';
-  font-weight: lighter;
-} */
+
 
 .userContainer{
   color: rgb(13,177,153);
   /* border: 1px rgb(0, 0, 0) solid;  */
+  height: 700px;
   display: flex;
   font-family: 'Pacifico';
   
@@ -23,6 +19,7 @@
   color:rgb(13,177,153);
   /* border: 1px rgb(150, 28, 28) solid;  */
   width: 20%;
+  height: 630px;
   font-family: 'Pacifico';
   margin-left: 10px;
   box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
@@ -31,6 +28,7 @@
   /* border: 1px rgb(55, 187, 38) solid;  */
   width: 75%;
   /* float: left; */
+  height: 630px;
   margin-left: 25px;
   font-weight: lighter;
   box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24);
