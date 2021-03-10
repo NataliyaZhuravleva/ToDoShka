@@ -34,7 +34,7 @@ export const makeApiCall = (category) => {
       .then((jsonifiedResponse) => {
         console.log(jsonifiedResponse);
         let calls = jsonifiedResponse.map((obj, index) => {
-          return fetch(`https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
+          return fetch(`https://api.allorigins.win/raw?url=https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
             .then(response2 => response2.json())
             .then(
               (jsonifiedResponse2) => {
