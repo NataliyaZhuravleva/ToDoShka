@@ -14,9 +14,17 @@ export const getPlacesFailure = (error) => ({
   error
 });
 
+export const changeCategory = (category)=> ({
+  type: c.CHANGE_CATEGORY,
+  category
+})
+
 export const makeApiCall = (category) => {
+  
   return dispatch => {
+    if (category){
     dispatch(requestPlaces);
+
     return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=100&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)
       .then(response => response.json())
       .then(
@@ -39,6 +47,9 @@ export const makeApiCall = (category) => {
         Promise.all(calls).then(() => dispatch(getPlacesSuccess(jsonifiedResponse)))
         return jsonifiedResponse;
       })
+    } else {
+      return false;
+    };
   }
 }
 

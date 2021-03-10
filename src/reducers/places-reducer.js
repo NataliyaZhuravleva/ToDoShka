@@ -4,7 +4,8 @@ import * as c from '../actions/ActionTypes';
 let initialState = {
   isLoading: true,
   places: [],
-  error: null
+  error: null,
+  category: false,
 }
 
 
@@ -25,6 +26,10 @@ export default (state = initialState, action) => {
           isLoading: false,
           error: action.error
         });
+    case c.CHANGE_CATEGORY:
+      return Object.assign({}, state,{
+        category: action.category
+      })    
       default:
         return state;
     }

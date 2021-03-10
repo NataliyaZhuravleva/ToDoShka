@@ -10,7 +10,7 @@ class Places extends React.Component {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(makeApiCall("bars"));
+    dispatch(makeApiCall(this.props.category));
   }
 
   render() {
@@ -47,7 +47,8 @@ const mapStateToProps = state => {
   return {
     places: state.places,
     isLoading: state.isLoading,
-    error: state.error
+    error: state.error,
+    category: state.category,
   }
 }
 
