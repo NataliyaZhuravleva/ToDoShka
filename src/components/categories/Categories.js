@@ -9,7 +9,7 @@ function Categories(props) {
 
   const categoriesString = {
     'Drink': "bars&biergartens&pubs&restaurants",
-    'Extreme': 'climbing&roller_coasters&other_amusement_rides',
+    'Extreme': 'roller_coasters&other_amusement_rides',
     'Family Style': 'amusement_parks&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
     'Show': 'theatres_and_entertainments'
   }
