@@ -47,8 +47,8 @@ class Places extends React.Component {
                 <li>
                   <div className="nameLine">
                       <h4> {place.name}</h4>
-                    <div className="deleteLink">
-                      <a href='' onClick={() => this.onClickingDelete(index)}>Delete Place</a>
+                    <div className="deleteButton">
+                      <button className="button" onClick={() => this.onClickingDelete(index)}>Delete Place</button>
                     </div>
                   </div>
                   <div className="info">

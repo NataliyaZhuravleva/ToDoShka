@@ -5,13 +5,13 @@ import { connect } from 'react-redux';
 import './categories.css';
 
 function Categories(props) {
-  const categories = ['Drink', 'Extreme', 'Family Style', 'Show'];
+  const categories = ['Drinks', 'Shows', 'Family Activities', 'Extreme Activities' ];
 
   const categoriesString = {
-    'Drink': "bars&biergartens&pubs&restaurants",
-    'Extreme': 'roller_coasters&other_amusement_rides',
-    'Family Style': 'amusement_parks&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
-    'Show': 'theatres_and_entertainments'
+    'Drinks': "bars&biergartens&pubs&restaurants",
+    'Extreme Activities': 'roller_coasters&other_amusement_rides',
+    'Family Activities': 'amusement_parks&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
+    'Shows': 'theatres_and_entertainments'
   }
 
   const whenCategoryClicked = (category) => {

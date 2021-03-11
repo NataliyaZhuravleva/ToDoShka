@@ -33,7 +33,12 @@ font-weight: lighter;
   justify-content:space-between;
 }
 
- .deleteLink{
+ .deleteButton{
   margin-top: 21px;
   margin-right: 65px;
+  border-color: rgb(106, 131, 127);
+ }
+
+ .button{
+   color:rgb(106, 131, 127);
  }
