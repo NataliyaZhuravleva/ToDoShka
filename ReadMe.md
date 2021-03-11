@@ -256,7 +256,7 @@ The main users are the people who are going on their trip. When you are planning
 2. _Click on the green button labeled `Code`_ to copy repository URL.
 3. _Clone the repository to your local machine_ by opening your machine terminal and using the command `git clone https://github.com/NataliyaZhuravleva/ToDoShka`.
 4. _Create API Key (see instruction below)_
-5. _Place your token in an .env file at the top level of your directory. Name your API key variable API_KEY in .env. Keep spelling and capitalization identical.(e.g. API_KEY=[your API Key])_
+5. _Place your token in an .env file at the top level of your directory. Name your API key variable REACT_APP_API_KEY in .env. Keep spelling and capitalization identical.(e.g. REACT_APP_API_KEY=[your API Key])_
 6. Include .env in .gitignore file. 
 
 ### <span style="color:#0ec2b8" id="API">Creating API Key</span>
