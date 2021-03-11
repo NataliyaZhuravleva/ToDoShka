@@ -37,6 +37,7 @@
   * <a href="#specs">Specs</a>
 * <a href="#setup">Setup and Use</a>
   * <a href="#cloning">Cloning the project</a>
+  * <a href="#API">Creating API Key</a>
   * <a href="#running">Running Application</a> 
 * <a href="#contact">Support and contact details</a>
 * <a href="#license">License</a>
@@ -254,6 +255,14 @@ The main users are the people who are going on their trip. When you are planning
 1. _Navigate to my [ToDoShka repo](https://github.com/NataliyaZhuravleva/ToDoShka) at https://github.com/NataliyaZhuravleva/ToDoShka_ to view the project files and commits.
 2. _Click on the green button labeled `Code`_ to copy repository URL.
 3. _Clone the repository to your local machine_ by opening your machine terminal and using the command `git clone https://github.com/NataliyaZhuravleva/ToDoShka`.
+4. _Create API Key (see instruction below)_
+5. _Place your token in an .env file at the top level of your directory. Name your API key variable API_KEY in .env. Keep spelling and capitalization identical.(e.g. API_KEY=[your API Key])_
+6. Include .env in .gitignore file. 
+
+### <span style="color:#0ec2b8" id="API">Creating API Key</span>
+
+1. _To use this application, you will need to make an account and get an API key. The "Free Plan" allows for 5000 API calls per day, 10 requests per second. Note, you can use that API for Non-commercial goals only!_ 
+2. _Visit the [OpenTripMap site](https://opentripmap.io/register) to register and get your API Key._
 
 ### <span style="color:#0ec2b8" id="running">Running Application</span> 
 
