@@ -8,9 +8,9 @@ class Places extends React.Component {
   // constructor(props) {
   //   super(props);
   // };
-  onClickingDelete(place) {
+  onClickingDelete(index) {
     const {dispatch} = this.props;
-    const action = deletePlace(place);
+    const action = deletePlace(index);
     dispatch(action);
   }
 
@@ -48,7 +48,7 @@ class Places extends React.Component {
               <div key={index} className="places">
                 <li>
                   <h4> {place.name}</h4>
-                  <button onClick={() => this.onClickingDelete(place)}>Delete Place</button>
+                  <button onClick={() => this.onClickingDelete(index)}>Delete Place</button>
                   <div className="info">
                     <div className="description">
                     <div>

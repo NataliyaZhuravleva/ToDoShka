@@ -31,12 +31,25 @@ export default (state = initialState, action) => {
         category: action.category
       })
     case c.DELETE_PLACE:
-      return Object.assign({}, state, {
-        places: [...state.places.slice(0, action.place),
-                 ...state.places.slice(action.place+1)
-                ]
+      const id = action.place   
+      console.log(id);   
+      return {
+          ...state,
+          places: state.places.filter((place) => state.places.indexOf(place) !== id)
+      }
+      // return {
+      //   ...state,
+      //   places: state.places.filter(place => place._id !== place),
+        
+      // };
+    //   return { places: state.places.filter(place =>
+    //     place !== action.place
+    //  )}
+      // return state.filter(place => place !== action.place)
+      // return Object.assign({}, state, {
+      //   places: action.places.filter(place=>place[place]!==place )
 
-      });
+      
     default:
       return state;
   }
