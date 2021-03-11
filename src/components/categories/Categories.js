@@ -8,9 +8,9 @@ function Categories(props) {
   const categories = ['Drink', 'Extreme', 'Family Style', 'Show'];
 
   const categoriesString = {
-    'Drink': "bars",//&biergartens&pubs&restaurants",
-    'Extreme': 'climbing',//&roller_coasters&other_amusement_rides',
-    'Family Style': 'amusement_parks',//&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
+    'Drink': "bars&biergartens&pubs&restaurants",
+    'Extreme': 'climbing&roller_coasters&other_amusement_rides',
+    'Family Style': 'amusement_parks&water_parks&roller_coasters&ferris_wheels&zoos&aquariums&children_museums',
     'Show': 'theatres_and_entertainments'
   }
 
@@ -33,7 +33,7 @@ function Categories(props) {
               {categories.map((category, index) =>
                 <li
                   key={index}
-                  onClick={() => whenCategoryClicked(category)}><a href="#">{category}</a>
+                  onClick={() => whenCategoryClicked(category)}>{category}
                 </li>
               )}
             </ul>
