@@ -28,7 +28,7 @@
 * <a href="#about">About the project</a>
   * <a href="#description">Description</a>
   * <a href="#used">Technologies Used</a>
-  * <a href="#diagram">Component Diagram</a>
+  * <a href="#tree">Component Diagram</a>
   * <a href="#bugs">Known Bugs</a>
 * <a href="#scope">Scope</a>
   * <a href="#usecase">Use Case</a>
@@ -52,15 +52,20 @@
 * _JavaScript_
 * _React/JSX_
 * _Redux_
-* _Firestore_
 * _API_
 * _jQuery_
 * _VisualStudio Code_
 * _Git_
 * _GitHub_
 
-### <span style="color:#0ec2b8" id="diagram">Component Diagram</span>
-ToDo
+### <span style="color:#0ec2b8" id="tree">Component Tree</span>
+<br>
+<br>
+
+![Preview](src/img/ToDoShka.png)
+
+<br>
+
 ### <span style="color:#0ec2b8" id="bugs">Known Bugs</span>
 
 _No known bugs_
@@ -101,7 +106,7 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Input </td>
-      <td>"Las Vegas"</td>
+      <td>Open a website</td>
     </tr>
     <tr>
       <td> Output </td>
@@ -113,7 +118,7 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Completion </td>
-      <td>False</td>
+      <td>True</td>
     </tr>
   </table>
 
@@ -129,15 +134,15 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> <b>Behavior 02-A </b></td>
-      <td><b>User is able to choose Show and get a list of show in Las Vegas for particular day.</b></td>
+      <td><b>User is able to choose Show and get a list of show in Las Vegas.</b></td>
     </tr>
     <tr>
       <td> Input </td>
-      <td>Show, 2021/03/15</td>
+      <td>Show</td>
     </tr>
     <tr>
       <td> Output </td>
-      <td>List of Show in LasVegas for 2021/03/15</td>
+      <td>List of Show in LasVegas</td>
     </tr>
     <tr>
       <td> Notes </td>
@@ -145,7 +150,7 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Completion </td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <td> <b>Behavior 02-B</b> </td>
@@ -165,7 +170,7 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Completion </td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <td> <b>Behavior 02-C </b></td>
@@ -185,7 +190,7 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Completion </td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <td> <b>Behavior 02-D </b></td>
@@ -205,7 +210,7 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Completion </td>
-      <td>False</td>
+      <td>True</td>
     </tr>
   </table>
   
@@ -233,11 +238,11 @@ The main users are the people who are going on their trip. When you are planning
     </tr>
     <tr>
       <td> Notes </td>
-      <td>Research how to organize database</td>
+      <td></td>
     </tr>
     <tr>
       <td> Completion </td>
-      <td>False</td>
+      <td>True</td>
     </tr>
   </table>
 
@@ -307,33 +312,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-#### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-#### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-#### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-#### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-#### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-#### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
