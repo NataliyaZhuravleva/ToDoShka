@@ -32,24 +32,10 @@ export default (state = initialState, action) => {
       })
     case c.DELETE_PLACE:
       const id = action.place   
-      console.log(id);   
       return {
           ...state,
           places: state.places.filter((place) => state.places.indexOf(place) !== id)
       }
-      // return {
-      //   ...state,
-      //   places: state.places.filter(place => place._id !== place),
-        
-      // };
-    //   return { places: state.places.filter(place =>
-    //     place !== action.place
-    //  )}
-      // return state.filter(place => place !== action.place)
-      // return Object.assign({}, state, {
-      //   places: action.places.filter(place=>place[place]!==place )
-
-      
     default:
       return state;
   }

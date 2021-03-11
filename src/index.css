@@ -12,16 +12,9 @@ code {
     monospace;
 }
 
-
-/* * {
-  font-family: "Verdana", cursive, sans-serif;
-  color: #ffffff;
-} */
-
 body {
   margin: 0;
   background-color: #edf5fc;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;

@@ -1,7 +1,5 @@
 .bodyText{
-  
   font-family: 'Montserrat';
-  /* font-weight: lighter; */
   color: rgb(106, 131, 127);
   font-size: large;
   margin-left: 20px;
@@ -14,28 +12,17 @@
 
 .info{
   display: flex;
-  /* font-family: 'Montserrat'; */
 }
 
 .description{
-/* border: 1px rgb(55, 187, 38) solid;  */
 width: 75%;
-/* float: left; */
-/* margin-left: 25px; */
 font-weight: lighter;
-/* box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24); */
 }
 
 .objectImage{
-  
-  /* border: 1px rgb(150, 28, 28) solid;  */
   width: 150px;
- 
- 
-  /* margin-left: 10px;
-  box-shadow: 5px 5px 20px 5px rgba(230, 203, 248, 0.2), 0 5px 5px 0 rgba(1, 1, 1, 0.24); */
 }
+
 #objectImage {
   max-width: 150px;
- 
 }

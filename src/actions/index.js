@@ -14,72 +14,44 @@ export const getPlacesFailure = (error) => ({
   error
 });
 
-export const changeCategory = (category)=> ({
+export const changeCategory = (category) => ({
   type: c.CHANGE_CATEGORY,
   category
 })
 
-export const deletePlace = (place) =>({
+export const deletePlace = (place) => ({
   type: c.DELETE_PLACE,
   place
 })
 
 export const makeApiCall = (category) => {
-  
-  return dispatch => {
-    if (category){
-    dispatch(requestPlaces);
 
-    return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=5000&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)
-      .then(response => response.json())
-      .then(
-        (jsonifiedResponse) => {
+  return dispatch => {
+    if (category) {
+      dispatch(requestPlaces);
+      return fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=5000&lon=-115.13722&lat=36.17497&kinds=${category}&&format=json&apikey=${process.env.REACT_APP_API_KEY}`)
+        .then(response => response.json())
+        .then(
+          (jsonifiedResponse) => {
+            return jsonifiedResponse;
+          })
+        .then((jsonifiedResponse) => {
+          let calls = jsonifiedResponse.map((obj, index) => {
+            return fetch(`https://api.allorigins.win/raw?url=https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
+              .then(response2 => response2.json())
+              .then(
+                (jsonifiedResponse2) => {
+                  jsonifiedResponse[index] = { ...obj, ...jsonifiedResponse2 };//combained
+                })
+              .catch((error) => {
+                dispatch(getPlacesFailure(error));
+              })
+          })
+          Promise.all(calls).then(() => dispatch(getPlacesSuccess(jsonifiedResponse)))
           return jsonifiedResponse;
         })
-      .then((jsonifiedResponse) => {
-        console.log(jsonifiedResponse);
-        let calls = jsonifiedResponse.map((obj, index) => {
-          return fetch(`https://api.allorigins.win/raw?url=https://api.opentripmap.com/0.1/en/places/xid/${obj.xid}?apikey=${process.env.REACT_APP_API_KEY}`)
-            .then(response2 => response2.json())
-            .then(
-              (jsonifiedResponse2) => {
-                jsonifiedResponse[index] = { ...obj, ...jsonifiedResponse2 };//combained
-              })
-            .catch((error) => {
-              dispatch(getPlacesFailure(error));
-            })
-        }
-        )
-        Promise.all(calls).then(() => dispatch(getPlacesSuccess(jsonifiedResponse)))
-        return jsonifiedResponse;
-      })
     } else {
       return false;
     };
   }
 }
-
-
-//https://api.opentripmap.com/0.1/en/places/xid/${xid}?apikey=
-
-//   "rate": "2",
-//   "wikidata": "Q61906139",
-//   "kinds": "cultural,theatres_and_entertainments,nightclubs,interesting_places,adult,music_venues,foods,bars,tourist_facilities",
-//   "sources": {
-//     "geometry": "wikidata",
-//     "attributes": [
-//       "wikidata"
-//     ]
-//   },
-//   "otm": "https://opentripmap.com/en/card/Q61906139",
-//   "image": "https://commons.wikimedia.org/wiki/File:Las_Vegas_2009_39_-_panoramio.jpg",
-//   "preview": {
-//     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Las_Vegas_2009_39_-_panoramio.jpg/400px-Las_Vegas_2009_39_-_panoramio.jpg",
-//     "height": 300,
-//     "width": 400
-//   },
-//   "point": {
-//     "lon": -115.141235,
-//     "lat": 36.169872
-//   }
-// }
