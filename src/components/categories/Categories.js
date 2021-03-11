@@ -33,7 +33,7 @@ function Categories(props) {
               {categories.map((category, index) =>
                 <li
                   key={index}
-                  onClick={() => whenCategoryClicked(category)}>{category}
+                  onClick={() => whenCategoryClicked(category)}><a href="#">{category}</a>
                 </li>
               )}
             </ul>
