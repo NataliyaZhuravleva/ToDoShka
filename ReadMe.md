@@ -52,8 +52,9 @@
 * _JavaScript_
 * _React/JSX_
 * _Redux_
-* _API_
 * _jQuery_
+* _HTML/CSS_
+* _API_
 * _VisualStudio Code_
 * _Git_
 * _GitHub_

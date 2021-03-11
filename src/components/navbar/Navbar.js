@@ -12,7 +12,7 @@ function Navbar() {
               <li><Link to="/" href="#">Home</Link></li>
               <li><Link to="/About" href="#">About</Link></li>
               <li><Link to="/FAQ" href="#">FAQ</Link></li>
-              <li><Link to="/Contact" href="#">Contact</Link></li>
+              <li><Link to="/Contacts" href="#">Contacts</Link></li>
             </ul>
           </div>
         </Switch>
