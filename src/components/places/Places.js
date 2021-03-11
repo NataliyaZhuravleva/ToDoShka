@@ -33,7 +33,7 @@ class Places extends React.Component {
             <p>ToDoSka is the app creating customized Things ToDo List considering your interests and giving you a
                list for your personal purposes.</p>
             <p>For now, Todoshka considers trips to Las Vegas, NV only. In the future, we are planning to expand trip locations.</p>
-            <p>Plase, choose a category of your interests.</p>
+            <p>Please, choose a category of your interests.</p>
           </section>
         </React.Fragment>
       );
@@ -45,8 +45,12 @@ class Places extends React.Component {
             {places.map((place, index) => (
               <div key={index} className="places">
                 <li>
-                  <h4> {place.name}</h4>
-                  <button onClick={() => this.onClickingDelete(index)}>Delete Place</button>
+                  <div className="nameLine">
+                      <h4> {place.name}</h4>
+                    <div className="deleteLink">
+                      <a href='#' onClick={() => this.onClickingDelete(index)}>Delete Place</a>
+                    </div>
+                  </div>
                   <div className="info">
                     <div className="description">
                       <div>
